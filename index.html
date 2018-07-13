@@ -11,6 +11,7 @@
 
         <link rel="stylesheet"  type="text/css"  href="CSS/meyer_reset.css">
         <link rel="stylesheet"  type="text/css"  href="CSS/primary.css">
+        <link rel="stylesheet"  type="text/css"  href="jQueryUI/jquery-ui.min.css">
 
         <script
 			  src="https://code.jquery.com/jquery-3.3.1.js"
@@ -29,19 +30,26 @@
 
                 <form>
 
-                    <input type="text">
+                    <input  class="INFLD-T-01" 
+                            type="text">
 
-                    <select>
+                    <input  id="sowDate" 
+                            class="INFLD-T-01"
+                            type="text">
+
+                    <select class="DDBX-T-01">
+
                         <option>One quart (32oz)</option>
                         <option>Two quart (64oz)</option>
                         <option>Pint (16oz)</option>
+
                     </select>
 
-                    <select id="seedPicker">
+                    <select id="seedPicker"
+                            class="DDBX-T-01">
 
-                            <option id=     "BROC"
-                                    value=  "BROC">
-                                    Broccoli
+                            <option value=  "BROC">
+                                Broccoli
                             </option>
 
                             <option value="BSMX">
@@ -84,7 +92,8 @@
             </div>
 
         </div>
-        
+    
+    <script src="jQueryUI/jquery-ui.min.js"/>    
     <script src="JS/jquery-3.3.1.js"></script>
     <script src="JS/primary.js"></script>
 

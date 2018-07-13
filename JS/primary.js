@@ -6,7 +6,15 @@ $(document).ready(function(){
       let type = $(this).val();
 
       console.log(type);
-      
+
     });
+
+
+    $("#sowDate").datepicker();
+
+    $(".DDBX-T-01").selectmenu();
+
+
+
 
 });
