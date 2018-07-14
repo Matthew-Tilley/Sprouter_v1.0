@@ -1,9 +1,36 @@
+body
+{
+    /* background-image:     url("/ASSETS/BG-SUNFLW.jpeg");
+    background-repeat:      no-repeat;
+    background-size:        cover; */
+   
+    
+}
+
+
 .INFLD-T-01
 {
-    background-color: #201913;
+    width:          85vw;
+    border-radius:  8px;
+
     font-family:    'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size:          1em;
     font-weight:        600; 
-    color:              #9BCC60;
+    color:              #4C3000;
+
+    background-color: #FFDD57;
+}
+
+
+
+.INFLD-T-01:hover
+{
+    background-color: #FFDD57;
+    font-family:    'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size:          1em;
+    font-weight:        600; 
+    color:              #4C3000;
 
 }
+
+
