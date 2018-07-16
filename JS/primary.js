@@ -15,16 +15,18 @@ $(document).ready(function(){
     */
     
     
-    let type = $("#seedPicker").on("change", function(){
+    let seedType = function test(){
+       
+         $("#seedPicker").on("change", function(){
         
-        return $(this).val();
+            return $(this).val();
         
-    });
+        });
+        
+        
+    }
     
-    
-    console.log(type);
-    
-    
+   
     
     
     
