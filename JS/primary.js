@@ -13,7 +13,14 @@ $(document).ready(function(){
     
     
     $("#sowDate").datepicker().on("change", function(){
-        console.log( $(this).val() );
+        
+        let tempStart =  $(this).val();
+        
+        console.log(tempStart);
+        
+        
+        
+        
     });
     
     
