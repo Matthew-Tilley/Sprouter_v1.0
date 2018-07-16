@@ -8,6 +8,62 @@ body
 }
 
 
+form
+{
+    display:                        grid;
+    
+  
+    
+    grid-template-areas:            "jarNum"
+                                    "sowDate"
+                                    "seedPicker"
+                                    "seedMass"
+                                    "dueDate";    
+}
+
+
+
+#jarNum
+{
+    grid-area:                      jarNum;
+}
+
+
+#sowDate
+{
+    grid-area:                      sowDate;
+}
+
+
+#jarVolume
+{
+    grid-area:                      jarVolume;
+}
+
+
+#seedMass
+{
+    grid-area:                      seedMass;
+}
+
+
+#seedPicker
+{
+    grid-area:                      seedPicker;
+}
+
+
+#dueDate
+{
+    grid-area:                      dueDate;
+}
+
+
+
+
+
+
+
 /*.INFLD-T-01
 {
     width:          85vw;
