@@ -15,7 +15,12 @@ $(document).ready(function(){
     */
     
     
+   let x = function test()
+    {
+        return 2 + 2;
+    }
    
+   console.log(x());
     
    
     
@@ -35,9 +40,3 @@ $(document).ready(function(){
     
 });     /*END jQUERY*/
 
-
- let seedType = function test(){
-       
-         return document.getElementById("seedPicker").valueOf();
-        
-    }
