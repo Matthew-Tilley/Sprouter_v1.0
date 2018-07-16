@@ -1,7 +1,7 @@
 $(document).ready(function(){
     
-   /* $("#seedPicker").selectmenu();
-    $("#sowDate").datepicker();*/
+    $("#seedPicker").selectmenu();
+    $("#sowDate").datepicker();
     
     
     $("#seedPicker").on("change", function(){
