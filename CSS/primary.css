@@ -8,7 +8,7 @@ body
 }
 
 
-.INFLD-T-01
+/*.INFLD-T-01
 {
     width:          85vw;
     border-radius:  8px;
@@ -19,11 +19,11 @@ body
     color:              #4C3000;
 
     background-color: #FFDD57;
-}
+}*/
 
 
 
-.INFLD-T-01:hover
+/*.INFLD-T-01:hover
 {
     background-color: #FFDD57;
     font-family:    'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -31,6 +31,6 @@ body
     font-weight:        600; 
     color:              #4C3000;
 
-}
+}*/
 
 

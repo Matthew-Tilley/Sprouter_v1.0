@@ -1,6 +1,6 @@
 $(document).ready(function(){
     
-    $("#seedPicker").selectmenu();
+    
     $("#sowDate").datepicker();
     
     
