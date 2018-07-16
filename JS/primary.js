@@ -12,5 +12,17 @@ $(document).ready(function(){
     
     
     
+    $("#sowDate").datepicker().on("change", function(){
+        console.log( $(this).val() );
+    });
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
 });

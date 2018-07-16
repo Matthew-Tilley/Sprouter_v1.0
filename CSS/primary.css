@@ -23,40 +23,15 @@ form
 
 
 
-#jarNum
-{
-    grid-area:                      jarNum;
-}
+#jarNum     {grid-area: jarNum;}
 
+#sowDate    {grid-area: sowDate;}
 
-#sowDate
-{
-    grid-area:                      sowDate;
-}
+#seedMass   {grid-area: seedMass;}
 
+#seedPicker {grid-area: seedPicker;}
 
-#jarVolume
-{
-    grid-area:                      jarVolume;
-}
-
-
-#seedMass
-{
-    grid-area:                      seedMass;
-}
-
-
-#seedPicker
-{
-    grid-area:                      seedPicker;
-}
-
-
-#dueDate
-{
-    grid-area:                      dueDate;
-}
+#dueDate    {grid-area: dueDate;}
 
 
 
