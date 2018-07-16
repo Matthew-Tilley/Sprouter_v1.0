@@ -17,12 +17,7 @@ $(document).ready(function(){
     
     let seedType = function test(){
        
-         $("#seedPicker").on("change", function(){
-        
-            return $(this).val();
-        
-        });
-        
+         return document.getElementById("seedPicker").valueOf();
         
     }
     
