@@ -15,11 +15,7 @@ $(document).ready(function(){
     */
     
     
-    let seedType = function test(){
-       
-         return document.getElementById("seedPicker").valueOf();
-        
-    }
+   
     
    
     
@@ -35,12 +31,13 @@ $(document).ready(function(){
     });
     
     
+   
     
-    
-    
-    
-    
-    
-    
-    
-});
+});     /*END jQUERY*/
+
+
+ let seedType = function test(){
+       
+         return document.getElementById("seedPicker").valueOf();
+        
+    }
