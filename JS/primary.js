@@ -40,7 +40,10 @@ $(document).ready(function(){
 
 let x = function()
 {
-    console.log(Math.random());
+    return Math.random();
 }
+
+
+console.log(x);
 
 
