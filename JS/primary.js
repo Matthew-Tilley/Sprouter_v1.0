@@ -51,11 +51,16 @@ $(document).ready(function(){
 
 /*
 
-EXAMPLE #16
+EXAMPLE #17
 
-Now using jQuery for the event handler - returning random value
-as expected but also "uncaught reference error" and I probably
-know why.
+Yup...eliminated the "onclick" in my HTML because it was
+trying to call a function that no longer existed; hence 
+the uncaught reference error.
+
+Not only that, but it wouldn't be needed anyway since I
+am now using jQuery as my event handler.
+
+Everything working as expected...
 
 */
 
