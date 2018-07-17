@@ -40,16 +40,20 @@ $(document).ready(function(){
 
 /*
 
-EXAMPLE #2
+EXAMPLE #3
 
-My thinking here is, that I will now assign the result to a variable
-but it's no longer working because I changed the naming of the
-function...still no problem "conceptually."  (Easy to figure out
-because it gives back an "uncaught reference error" on the HTML side.)
+Now I have fixed the previous problem by changing "test" to "x"
+in my HTML function call.
+
+Also eliminated "test" within the function definition...because 
+doing it this way creates an "anonymous function" correct?
+
+In this case, it works properly and spits out random numbers as
+expected...
 
 */
 
-let x = function test()
+let x = function()
 {
     console.log(Math.random());
 }
