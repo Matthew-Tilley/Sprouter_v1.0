@@ -40,14 +40,12 @@ $(document).ready(function(){
 
 /*
 
-EXAMPLE #13
+EXAMPLE #14
 
-Created a function that calls two other functions, both of which
-return a respective string value.
+SYNTAX ERROR - Realized what I did / had an ending paren in the
+wrong spot.
 
-Using button click to fire the function call...only getting back
-a value of "this" however.  Hmmmm.....
-
+Now works as expected...
 
 */
 
@@ -55,7 +53,7 @@ a value of "this" however.  Hmmmm.....
 function go(){
     
     
-    console.log(this1()) + " & " + that();
+    console.log(this1() + " & " + that() );
     
     
 }
