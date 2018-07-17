@@ -34,15 +34,8 @@ $(document).ready(function(){
     
     
     
-    let x = $("#test").on("click", function(){
-        
-        return(Math.random());
-        
-        
-    });
+   
     
-    
-    console.log(x());
     
    
     
@@ -53,25 +46,32 @@ $(document).ready(function(){
 
 /*
 
-EXAMPLE #20
+EXAMPLE #21
 
-So...tried putting in a set of parens to call the function
-(like before) and it REALLY didn't like that at all.
+I set this up after watching a YouTube tutorial based on converting
+miles to kilometers; made it deal with temperatures instead so I wouldn't
+just be "following the example" he was presenting.
 
-Okay, so I am trying to use a button with an ID of "test"
-and using that to fire a jQuery function that will return
-a value (random number) to the variable "x" and it's not working.
+All I wanted to do is check to ensure the function was working (not even
+returning a value yet) and thought it would just log a value to the console.
+(In other words, whatever I entered into the Celcius field would output to the
+console.)
 
+Instead I get this back in the console:
+
+<input id="test" type="text" onchange="convert()">
 
 
 */
 
 
-
-
-
-
-
+function convert(){
+    
+    let tempVal = document.getElementById("test");
+    
+    console.log(tempVal);
+    
+}
 
 
 
