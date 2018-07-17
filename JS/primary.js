@@ -40,16 +40,20 @@ $(document).ready(function(){
 
 /*
 
-EXAMPLE #5
+EXAMPLE #6
 
-Per usual, once I start messing around with "return" values
-the wheels completely fall off.
+Since I got back a function definition before, that tells me
+I need to modify my code by doing console.log(x());
+instead of console.log(x); because...it is a function.  Still
+not completely intuitive, but that makes sense to me.
 
-My thinking is, that clicking the button will assign a value
-(random number) to the variable "x" and I should be able to
-log it via the output below.
+Instead of the value changing though, now I just get back ONE
+value after refreshing the page each time; also has NOTHING to
+do with clicking the button.
 
-Instead, I just get back a function definition...
+At this point, assuming that's because I'm not actually calling
+the function when clicking the button now?
+
 
 */
 
@@ -58,7 +62,7 @@ let x = function()
     return ( Math.random() );
 }
 
-console.log(x);
+console.log(x());
 
 
 
