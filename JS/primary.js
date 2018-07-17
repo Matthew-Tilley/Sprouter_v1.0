@@ -40,18 +40,13 @@ $(document).ready(function(){
 
 /*
 
-EXAMPLE #8
+EXAMPLE #9
 
-Again, since I was getting back the function definition that
-tells me I need to put a set of parens after "x" to call the
-function...
-
-Now I get a random number logged to the console when refreshing
-the page.  However, I also still get an "uncaught reference error"
-when clickinbg the button.
-
-My guess is, because "y" is just a variable (not a function) that's
-why it's not working?
+To fix the previous issue, I made "y" into an anonymous
+function and used it to console.log the value of "x" but
+it gets back a function definition instead.  Obviously, I
+know what needs to be done in this case; starting to catch
+on...
 
 
 
@@ -62,7 +57,11 @@ let x = function()
     return ( Math.random() );
 }
 
-let y = console.log(x());
+
+let y = function()
+{
+    console.log(x);
+}
 
 
 
