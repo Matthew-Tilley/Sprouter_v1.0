@@ -40,19 +40,30 @@ $(document).ready(function(){
 
 /*
 
-EXAMPLE #11
+EXAMPLE #12
 
-Changing things up, I now create a regular function 
-definition; clicking the button will obviously return
-an integer of 4 but it's not being output anywhere.
+Just like before, I have created another function that is
+called whenever the button is clicked.
 
+Within the function that is actuated when the button is clicked,
+I call function "y()" that gets the value of 4.
 
+I guess "y" doesn't equal 4 until function "y" is actually called...
+by clicking the button and firing function "a" which...makes sense
+now that I think about it.
 
 */
 
-function y(){
+let y = function (){
     return 2+2;
 }
+
+
+function a(){
+    console.log(y());
+}
+
+
 
 
 
