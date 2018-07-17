@@ -31,6 +31,17 @@ $(document).ready(function(){
     });
     
     
+    
+    
+    
+    $("#test").on("click", function(){
+        
+        console.log(Math.random());
+        
+        
+    });
+    
+    
    
     
 });     /*END jQUERY*/
@@ -40,37 +51,17 @@ $(document).ready(function(){
 
 /*
 
-EXAMPLE #15
+EXAMPLE #16
 
-Not sure why I did this (really doesn't matter) but changed the
-return values so they add up to an integer instead of concat a
-string.
+Now using jQuery for the event handler - returning random value
+as expected but also "uncaught reference error" and I probably
+know why.
 
 */
 
 
-function go(){
-    
-    
-    console.log(this1() + that() );
-    
-    
-}
 
 
-function this1(){
-    
-    return 2;
-    
-}
-
-
-
-function that(){
-    
-    return 2;
-    
-}
 
 
 
