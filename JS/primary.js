@@ -40,24 +40,25 @@ $(document).ready(function(){
 
 /*
 
-EXAMPLE #4
+EXAMPLE #5
 
-Now I have fixed the previous problem by changing "test" to "x"
-in my HTML function call.
+Per usual, once I start messing around with "return" values
+the wheels completely fall off.
 
-Also eliminated "test" within the function definition...because 
-doing it this way creates an "anonymous function" correct?
+My thinking is, that clicking the button will assign a value
+(random number) to the variable "x" and I should be able to
+log it via the output below.
 
-In this case, it now works properly and spits out random numbers 
-as expected...
+Instead, I just get back a function definition...
 
 */
 
 let x = function()
 {
-    console.log( Math.random() );
+    return ( Math.random() );
 }
 
+console.log(x);
 
 
 
