@@ -38,10 +38,13 @@ $(document).ready(function(){
 
 
 
-let x = function()
+function test()
     {
         return 2 + 2;
     }
    
-   console.log(x());
+
+let x = console.log(test());
+
+
 
