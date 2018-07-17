@@ -40,7 +40,7 @@ $(document).ready(function(){
 
 /*
 
-EXAMPLE #3
+EXAMPLE #4
 
 Now I have fixed the previous problem by changing "test" to "x"
 in my HTML function call.
@@ -48,15 +48,18 @@ in my HTML function call.
 Also eliminated "test" within the function definition...because 
 doing it this way creates an "anonymous function" correct?
 
-In this case, it works properly and spits out random numbers as
-expected...
+In this case, it now works properly and spits out random numbers 
+as expected...
 
 */
 
 let x = function()
 {
-    console.log(Math.random());
+    console.log( Math.random() );
 }
+
+
+
 
 
 
