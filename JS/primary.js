@@ -46,20 +46,16 @@ $(document).ready(function(){
 
 /*
 
-EXAMPLE #21
+EXAMPLE #22
 
-I set this up after watching a YouTube tutorial based on converting
-miles to kilometers; made it deal with temperatures instead so I wouldn't
-just be "following the example" he was presenting.
+Forget about all the text-field stuff for right now...just trying to get the
+return value situation squared away.
 
-All I wanted to do is check to ensure the function was working (not even
-returning a value yet) and thought it would just log a value to the console.
-(In other words, whatever I entered into the Celcius field would output to the
-console.)
+So, I made a function and had it return the value of "Farenheit" after converting 
+from Celcius.  Yay...it works!
 
-Instead I get this back in the console:
-
-<input id="test" type="text" onchange="convert()">
+What if I want to just store that variable somewhere and access / use it later in
+my code???
 
 
 */
@@ -67,11 +63,25 @@ Instead I get this back in the console:
 
 function convert(){
     
-    let tempVal = document.getElementById("test");
+    let celcius = prompt("Enter the degrees in Celcius");
+    //I am getting a value from user via the prompt method and assigning it to variable celcius.
     
-    console.log(tempVal);
+    
+    let farenheit = celcius * 1.8 + 32;
+    //Here I am instantiating the variable farenheit and storing a calculated result therein.
+    
+    
+    return farenheit;
+    //Now I am returning the result from above.
+    
+    
     
 }
+
+
+console.log(convert());
+
+//Calling the "convert" function wrapped in a console.log which outputs the value.
 
 
 
