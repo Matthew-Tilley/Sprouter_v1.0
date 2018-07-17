@@ -38,12 +38,23 @@ $(document).ready(function(){
 
 
 
-let x = function()
+/*
+
+EXAMPLE #1
+
+Okay...so I understand this is how you set up a function and 
+call it from HTML...no problem.
+
+*/
+
+function test()
 {
-    return Math.random();
+    console.log(Math.random());
 }
 
 
-console.log(x);
+
+
+
 
 
