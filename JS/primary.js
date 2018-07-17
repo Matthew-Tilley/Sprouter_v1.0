@@ -40,14 +40,16 @@ $(document).ready(function(){
 
 /*
 
-EXAMPLE #1
+EXAMPLE #2
 
-Okay...so I understand this is how you set up a function and 
-call it from HTML...no problem.
+My thinking here is, that I will now assign the result to a variable
+but it's no longer working because I changed the naming of the
+function...still no problem "conceptually."  (Easy to figure out
+because it gives back an "uncaught reference error" on the HTML side.)
 
 */
 
-function test()
+let x = function test()
 {
     console.log(Math.random());
 }
