@@ -34,13 +34,15 @@ $(document).ready(function(){
     
     
     
-    $("#test").on("click", function(){
+    let x = $("#test").on("click", function(){
         
-        console.log(Math.random());
+        return(Math.random());
         
         
     });
     
+    
+    console.log(x);
     
    
     
@@ -51,16 +53,18 @@ $(document).ready(function(){
 
 /*
 
-EXAMPLE #17
+EXAMPLE #18
 
-Yup...eliminated the "onclick" in my HTML because it was
-trying to call a function that no longer existed; hence 
-the uncaught reference error.
+Okay...here is where the rubber meets the road.  I'm looking
+at this as "click the button" and "x" will automagically have
+a random number value (float) stored in it.
 
-Not only that, but it wouldn't be needed anyway since I
-am now using jQuery as my event handler.
+Then the whole console.log thing gives me back a function 
+definition because I didn't use parens to actually call the function.
+Regardless, I'm thinking you click the button and whammo...that's what
+"x" is and should output such to the console.
 
-Everything working as expected...
+
 
 */
 
