@@ -42,7 +42,7 @@ $(document).ready(function(){
     });
     
     
-    console.log(x);
+    console.log(x());
     
    
     
@@ -53,16 +53,14 @@ $(document).ready(function(){
 
 /*
 
-EXAMPLE #18
+EXAMPLE #20
 
-Okay...here is where the rubber meets the road.  I'm looking
-at this as "click the button" and "x" will automagically have
-a random number value (float) stored in it.
+So...tried putting in a set of parens to call the function
+(like before) and it REALLY didn't like that at all.
 
-Then the whole console.log thing gives me back a function 
-definition because I didn't use parens to actually call the function.
-Regardless, I'm thinking you click the button and whammo...that's what
-"x" is and should output such to the console.
+Okay, so I am trying to use a button with an ID of "test"
+and using that to fire a jQuery function that will return
+a value (random number) to the variable "x" and it's not working.
 
 
 
