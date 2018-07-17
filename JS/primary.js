@@ -40,28 +40,28 @@ $(document).ready(function(){
 
 /*
 
-EXAMPLE #10
+EXAMPLE #11
 
-Now I put in the parens and everything works properly...it
-spits out a random number every time the button is clicked.
+Changing things up, I now create a regular function 
+definition; clicking the button will obviously return
+an integer of 4 but it's not being output anywhere.
 
-The confusing part is, I didn't even "pass" function "y" the
-variable "x" via an argument...didn't even instantiate a 
-parameter for such.  Yet, it's still working...???
 
 
 */
 
-let x = function()
-{
-    return ( Math.random() );
+function y(){
+    return 2+2;
 }
 
 
-let y = function()
-{
-    console.log(x());
-}
+
+
+
+
+
+
+
 
 
 
