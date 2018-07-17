@@ -40,12 +40,11 @@ $(document).ready(function(){
 
 /*
 
-EXAMPLE #14
+EXAMPLE #15
 
-SYNTAX ERROR - Realized what I did / had an ending paren in the
-wrong spot.
-
-Now works as expected...
+Not sure why I did this (really doesn't matter) but changed the
+return values so they add up to an integer instead of concat a
+string.
 
 */
 
@@ -53,7 +52,7 @@ Now works as expected...
 function go(){
     
     
-    console.log(this1() + " & " + that() );
+    console.log(this1() + that() );
     
     
 }
@@ -61,7 +60,7 @@ function go(){
 
 function this1(){
     
-    return "this";
+    return 2;
     
 }
 
@@ -69,7 +68,7 @@ function this1(){
 
 function that(){
     
-    return "that";
+    return 2;
     
 }
 
