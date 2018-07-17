@@ -38,7 +38,7 @@ $(document).ready(function(){
 
 
 
-let x = function test()
+let x = function()
     {
         return 2 + 2;
     }
