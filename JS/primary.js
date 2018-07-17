@@ -40,19 +40,19 @@ $(document).ready(function(){
 
 /*
 
-EXAMPLE #6
+EXAMPLE #7
 
-Since I got back a function definition before, that tells me
-I need to modify my code by doing console.log(x());
-instead of console.log(x); because...it is a function.  Still
-not completely intuitive, but that makes sense to me.
+So...now what I'm thinking is "okay, so x is a function
+that returns some random number to a variable.  Thus,
+what I'll do is create another variable to "catch" variable
+"x" while calling console.log with "y" when the button is
+clicked.
 
-Instead of the value changing though, now I just get back ONE
-value after refreshing the page each time; also has NOTHING to
-do with clicking the button.
+What I get back is a function definition, and then an
+"uncaught reference error" when the button is clicked.
 
-At this point, assuming that's because I'm not actually calling
-the function when clicking the button now?
+
+
 
 
 */
@@ -62,7 +62,7 @@ let x = function()
     return ( Math.random() );
 }
 
-console.log(x());
+let y = console.log(x);
 
 
 
