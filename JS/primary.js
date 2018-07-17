@@ -40,14 +40,14 @@ $(document).ready(function(){
 
 /*
 
-EXAMPLE #9
+EXAMPLE #10
 
-To fix the previous issue, I made "y" into an anonymous
-function and used it to console.log the value of "x" but
-it gets back a function definition instead.  Obviously, I
-know what needs to be done in this case; starting to catch
-on...
+Now I put in the parens and everything works properly...it
+spits out a random number every time the button is clicked.
 
+The confusing part is, I didn't even "pass" function "y" the
+variable "x" via an argument...didn't even instantiate a 
+parameter for such.  Yet, it's still working...???
 
 
 */
@@ -60,7 +60,7 @@ let x = function()
 
 let y = function()
 {
-    console.log(x);
+    console.log(x());
 }
 
 
