@@ -38,13 +38,9 @@ $(document).ready(function(){
 
 
 
-function test()
-    {
-        return 2 + 2;
-    }
-   
-
-let x = console.log(test());
-
+let x = function()
+{
+    console.log(Math.random());
+}
 
 
