@@ -46,7 +46,7 @@ $(document).ready(function(){
 
 /*
 
-EXAMPLE #22
+EXAMPLE #23
 
 Forget about all the text-field stuff for right now...just trying to get the
 return value situation squared away.
@@ -61,7 +61,7 @@ my code???
 */
 
 
-function convert(){
+let x = function convert(){
     
     let celcius = prompt("Enter the degrees in Celcius");
     //I am getting a value from user via the prompt method and assigning it to variable celcius.
@@ -79,9 +79,7 @@ function convert(){
 }
 
 
-console.log(convert());
-
-//Calling the "convert" function wrapped in a console.log which outputs the value.
+console.log(x());
 
 
 
