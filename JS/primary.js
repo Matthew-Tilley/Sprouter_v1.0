@@ -44,7 +44,7 @@ $(document).ready(function(){
     
     var test = $("#seedPicker").on("change", function(){
         
-                console.log ( $(this).val() );
+                    return $(this).val();
         
                 });
     
@@ -53,38 +53,101 @@ $(document).ready(function(){
     
     
     /*
-        Now I put everything back kinda-sorta like it was before; 
-        instead of "returning" the value it gets shuffled off to 
-        the console.
-        
-        The whole thing is *STILL* assigned to a variable of "test"
-        and everything works just fine.    
        
+       Now I'll try this:
+       
+            console.log(test);
+            
+            
+        That gives me back this again:
+        
+            jQuery.fn.init [select#seedPicker.DDBX-T-01]
+            
+        
+        So, now I try this:
+        
+            console.log(test());
+            
+            
+        And it gives me back the great-big, horrible error
+        messages in my console.
+        
+        
+        Now I'm going to try changing up the function itself,
+        like so:
+        
+        CHANGING FROM:
+        
+            var test = $("#seedPicker").on("change", function(){
+
+                    console.log ( $(this).val() );
+
+                    });
+                    
+                    
+        CHANGING TO:
+                
+            var test = $("#seedPicker").on("change", function(){
+
+                        $(this).val();
+
+                    });
+                    
+                    
+        
+        Running this:
+            
+            console.log(test);
+        
+        Gives me back this:
+        
+            jQuery.fn.init [select#seedPicker.DDBX-T-01]
+            
+    
+        
+        Running this:
+        
+            console.log(test());
+            
+            
+        Gives me back the big-horrible error message again.  :(
+        
+        
+        
+        That gives me the bright idea to try putting in a dreaded
+        return keyword again, like so:
+        
+            var test = $("#seedPicker").on("change", function(){
+
+                        return $(this).val();
+
+                    });
+                    
+        
+        I run this and get the big horrible error message:
+        
+            console.log(test());
+            
+        
+        
+        I run this:
+        
+            console.log(test);
+            
+        
+        
+        And get back the following:
+        
+            jQuery.fn.init [select#seedPicker.DDBX-T-01]
+        
+     
+        
     */
     
     
-    
-
-    
-    
-    
-    
    
     
-   
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-   
-    
-    
+    console.log(test);
    
     
 });     /*END jQUERY*/
