@@ -48,39 +48,92 @@ $(document).ready(function(){
         
                 });
     
+    
+    var result = test();
+    
+    
+    
     /*
-        Okay...here is what I'm trying to do.  I basically made the
-        whole thing an anonymous function, right?
+        Function is same as before - should get a value when user
+        changes selection on dropdown menu.  Return statement obtains
+        and "returns" that value / assigns it to the variable "test"
+        right?
         
-        My thinking is, the function will fire when somebody changes
-        the dropdown value.
+        Now I'm trying to instantiate another variable (result) and
+        equating that with the variable "test."
         
-        That function obtains the current value and "returns" it.
+        Instead of trying to console.log the value from "test" I am 
+        now trying to console.log the value from "result" instead:
         
-        Thus, that means the variable "test" now equals whatever value
-        happens to get "returned" by the function at any given moment.
-        
-        At first I did:
-        
-            console.log(test); 
-        
-        and got this back via the console:
+            console.log(result);
+            
+        Again, that gives me back the following console:
         
             jQuery.fn.init [select#seedPicker.DDBX-T-01]
             
-        So, that tells me (since I'm basically getting a function definition
-        back) I need to call it (test) as a function instead...like this:
+        So, that tells me to call it as a function...no problem:
         
-            console.log(test());
+            console.log(result());
         
-        But when I do that, it causes everything to go haywire and puke all
-        over the console:
+        That gives me the same freak-out screen from my JavaScript console
+        as before:
         
-            jquery-3.3.1.js:3818 jQuery.Deferred exception: test is not a function TypeError: test is not a function
-            at HTMLDocument.<anonymous> (file:///home/madmin/Desktop/WEBDEV/CURRENT_PROJECTS/SPROUTER_v1.0/JS/primary.js:85:17)
+            jquery-3.3.1.js:3818 jQuery.Deferred exception: result is not a function TypeError: result is not a function
+            at HTMLDocument.<anonymous> (file:///home/madmin/Desktop/WEBDEV/CURRENT_PROJECTS/SPROUTER_v1.0/JS/primary.js:88:17)
             at mightThrow (file:///home/madmin/Desktop/WEBDEV/CURRENT_PROJECTS/SPROUTER_v1.0/JS/jquery-3.3.1.js:3534:29)
             at process (file:///home/madmin/Desktop/WEBDEV/CURRENT_PROJECTS/SPROUTER_v1.0/JS/jquery-3.3.1.js:3602:12) undefined
-    
+            
+            jQuery.Deferred.exceptionHook @ jquery-3.3.1.js:3818
+            process @ jquery-3.3.1.js:3606
+            setTimeout (async)
+            (anonymous) @ jquery-3.3.1.js:3640
+            fire @ jquery-3.3.1.js:3268
+            fireWith @ jquery-3.3.1.js:3398
+            fire @ jquery-3.3.1.js:3406
+            fire @ jquery-3.3.1.js:3268
+            fireWith @ jquery-3.3.1.js:3398
+            ready @ jquery-3.3.1.js:3878
+            completed @ jquery-3.3.1.js:3888
+            jquery-3.3.1.js:3827 Uncaught TypeError: result is not a function
+                at HTMLDocument.<anonymous> (primary.js:88)
+                at mightThrow (jquery-3.3.1.js:3534)
+                at process (jquery-3.3.1.js:3602)
+                
+                
+        So then, I'm thinking "okay, maybe I need to set variable "result" to the
+        *FUNCTION* of "test()" not just the *VARIABLE* of "test."  In other words:
+        
+            NOT LIKE THIS:
+            
+                var result = test;
+            
+            BUT LIKE THIS:
+            
+                var result = test();
+        
+        
+        At first (after making the appropriate changes) I ran my console.log like this:
+        
+            console.log(result());
+            
+        Silly mistake, because "result" is obviously a variable...not a function.  However,
+        the console gave me an error saying "test" is not a function.  (That part has me 
+        kinda scratching my head.)
+        
+        
+        So, now I change up my console.log statement like this...and log the *VARIABLE* 
+        stored in "result" which (in my mind) should be equal to whatever happens to be
+        returned from function test() at any given moment:
+        
+            console.log(result);
+            
+        Instead, I still get back those same nasty error messages in the console:
+        
+            jquery-3.3.1.js:3818 jQuery.Deferred exception: test is not a function TypeError: test is not a function
+            at HTMLDocument.<anonymous> (file:///home/madmin/Desktop/WEBDEV/CURRENT_PROJECTS/SPROUTER_v1.0/JS/primary.js:52:18)
+            at mightThrow (file:///home/madmin/Desktop/WEBDEV/CURRENT_PROJECTS/SPROUTER_v1.0/JS/jquery-3.3.1.js:3534:29)
+            at process (file:///home/madmin/Desktop/WEBDEV/CURRENT_PROJECTS/SPROUTER_v1.0/JS/jquery-3.3.1.js:3602:12) undefined
+            
             jQuery.Deferred.exceptionHook @ jquery-3.3.1.js:3818
             process @ jquery-3.3.1.js:3606
             setTimeout (async)
@@ -93,14 +146,21 @@ $(document).ready(function(){
             ready @ jquery-3.3.1.js:3878
             completed @ jquery-3.3.1.js:3888
             jquery-3.3.1.js:3827 Uncaught TypeError: test is not a function
-            at HTMLDocument.<anonymous> (primary.js:85)
+            at HTMLDocument.<anonymous> (primary.js:52)
             at mightThrow (jquery-3.3.1.js:3534)
-             
+            at process (jquery-3.3.1.js:3602)
+            
+    
+        UUUUUUGGGGGGGHHHHHHHHHHHHHHH....!!!!!  :(
+        
+       
     */
     
     
+    console.log(result);
     
-    console.log(test());
+    
+
     
     
     
